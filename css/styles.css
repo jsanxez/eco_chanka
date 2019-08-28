@@ -1,199 +1,190 @@
+:root {
+    --primary-light: #f6f6f6; /*ddd*/
+    --primary-dark: #48590B;
+    --background-light: rgb(78, 160, 228);
+    --background-dark: #592F0B;
+    --dark40: rgba(0, 0, 0, .5);
+    --background-btn: #0CBF06;
+    --vborder-space: 72px;
+    --hborder-space: 5%;
+}
+
 * {
     border: none;
     list-style: none;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+body, button {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-dark);
 }
 
-#main-header-wrapper {
-    background-image: url(../images/fondo.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    /*    opacity: 1;*/
-    /*    filter: brightness(100%);*/
-    color: white;
-    /* display: flex; */
-    min-height: 600px;
+button {
+    background-color: var(--background-btn);
+    border-radius: 50px;
+    color: var(--primary-light);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 10px;
+    min-width: 130px;
 }
 
-#main-header-wrapper header {
-    background-color: rgba(0, 0, 0, 0.25);
+/* ----> main header <---- */
+#main-header {
+    background-color: white;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
-    padding: 16px 3%;
-    /* overflow: hidden; */
+    flex-flow: row wrap;
+    margin: auto;
+    padding: 10px var(--hborder-space);
+    min-height: 12.5vh;
 }
 
-#logo-wrapper {
-    box-sizing: border-box;
-    text-align: center;
-    display: inline-block;
-    flex: 0 1 auto;
-    min-width: 170px;
-    /* float: left; */
-    /* width: 14%; */
-    /* height: 200px; */
+#main-header #logo-wrapper{
+    flex: 1;
+    display: flex;
 }
-
-#logo-wrapper .logo {
-    width: 100px;
+#logo-wrapper img {
+    width: 70px;
 }
-
-/* #logo-wrapper h1 {
-    font-size: 30px;
-    font-weight: 400;
-    margin-top: 30px;
-} */
 
 #menu-bar {
-    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    flex-flow:row wrap;
-    flex:0 1 450px;
     align-items: center;
-    justify-content: space-between;
-    /* align-content: space-between; */
-    /* height: 100px; */
-    /* float: right; */
-    /* margin-top: 30px; */
-    /* text-align: right; */
-    /* flex: 0 1 auto; */
+    justify-content: space-around;
+    flex: 2;
 }
-
-#menu-bar li {
-    text-align: center;
-    border: 1px solid;
-    /* display: inline-block; */
-    opacity: 0.8;
-    flex: 0 1 auto;
+#menu-bar a {
+    color: var(--primary-dark);
+    font-size: 16px;
+    font-weight: 300;
     padding: 5px 10px;
-    /* margin: 5px; */
 }
 
-#menu-bar li a {
-    color: white;
+#login {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+#login img {
+    width: 30px;
+}
+#login span {
+    font-size: 12px;
+    font-weight: 300;
 }
 
-#menu-bar li:hover {
-/*        filter:brightness(100%);*/
-    background-color: rgba(93, 122, 139, .5);
-    opacity: 1;
+/*----> slider <----*/
+#slider {
+    background-image: url(../images/business.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 2px 5px #494949;
+    height: 87.5vh;
 }
-
-#headline {
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 10%;
+#slider #headline {
+    background-color: var(--dark40);
+    color: var(--primary-light);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     text-align: center;
+    padding: var(--vborder-space) 0;
 }
+
+
 
 #headline h2 {
-    font-size: 4em;
-    font-weight: 900;
-    overflow: hidden;
+    font-size: 2.2em;
+    font-weight: 500;
+    /* overflow: hidden; */
     /* word-break: break-all; */
     text-overflow: ellipsis;
 }
 #headline h3 {
     font-size: 25px;
-    font-weight: 300
+    font-weight: 300;
+
+}
+#headline button {
+    margin-top: 72px;
 }
 
-/*----> main <----*/
-/*#main-container {
-    background-color: #ADC5D9;
-    padding: 0px 24px;
-}*/
-main {
-    background-color: #ADC5D9;
-    /*    padding: 3% 0;*/
-    /*    width: 90%;*/
-}
-
+/* ----> main content <---- */
 .container {
-    color: white;
-    padding: 72px 0px;
+    background-color: var(--background-light);
+    padding: var(--vborder-space) 0;
     text-align: center;
+    min-height: 100vh;
 }
-
 .container h3 {
-    font-size: 35px;
-}
+    font-size: 24px;
+    font-weight: 500;
 
+}
 .container h4 {
     font-size: 24px;
     font-weight: 100;
-    margin-top: 12px;
+    margin-top: 32px;
+
 }
 
-button {
-    background-color: #5D7A8C;
-    border-radius: 18px;
-    color: white;
-    display: block;
-    margin: auto;
-    margin-top: 48px;
-    padding: 10px 25px;
-    font-size: 15px;
+.about-section {
+    color: var(--primary-light);
 }
-button:hover {
-    background-color: #4d6675;
-}
-
 .about-section img {
-    width: 170px;
+    width: 200px;
 }
-
 .about-section h3 {
-    margin-top: 15px;
+    font-weight: 700;
+    margin-top: 14px;
 }
-
 .about-section h4 {
-    max-width: 450px;
+    font-weight: 300;
+    max-width: 500px;
     margin: 0px auto;
-
 }
-
+.about-section button {
+    margin-top: var(--vborder-space);
+}
 
 /*----> services <----*/
 .services-section {
-    background-color: #f6f6f6;
-    color: #48590B;
+    background-color: var(--primary-light);
 }
 
 .services-section #services-container {
-    margin: auto;
-    /*    padding: 24px 0;*/
-    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 var(--hborder-space);
 }
 
 .services-section .service-wrapper {
-    /*    box-shadow: 1px 0 6px 2px gray;*/
-    display: inline-block;
-    margin: 12px 24px;
-    padding: 32px 24px;
-    max-width: 260px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 24px;
+    padding: 1em 2em;
+    max-width: 300px;
 }
 .service-wrapper:hover {
     box-shadow: 0px 2px 6px #d1d3d1;
 }
 
 .service-wrapper .image-wrapper {
-    background-color: #5D7A8C;
+    background-color: var(--background-btn);
     border-radius: 50%;
-    margin: auto;
-    padding: 16px;
-    /*    overflow: hidden;*/
-    width: 100px;
+    padding: 16px
 }
 
 .service-wrapper img {
@@ -203,14 +194,9 @@ button:hover {
 }
 
 .service-wrapper h4 {
-    font-weight: 600;
+    font-weight: 400;
 }
 
-.service-wrapper p {
-    font-weight: 100;
-    font-size: 18px;
-    margin-top: 18px;
-}
 
 /*----> clients <----*/
 .clients-section {
