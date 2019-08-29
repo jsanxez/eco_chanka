@@ -93,7 +93,7 @@ button {
 
 /*----> slider <----*/
 #slider {
-    background-image: url(../images/tala.jpg);
+    background-image: url(../images/business.jpg);
     background-size: cover;
     background-position: center;
     box-shadow: inset 0px 2px 5px #494949;
@@ -149,7 +149,6 @@ button {
 
 .about-section {
     background: radial-gradient(var(--background-light), var(--background-dark));
-    /* background-color: var(--background-light); */
     color: var(--primary-light);
 }
 .about-section img {
