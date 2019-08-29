@@ -71,7 +71,8 @@ button {
 
 /* -----------test effects */
 #menu-bar a:hover {
-    text-shadow: 1px 1px;
+    transform: scale(1.2, 1.2);
+    /* text-shadow: 1px 1px; */
     transition-duration: 500ms;
 }
 /* -----------test effects */
