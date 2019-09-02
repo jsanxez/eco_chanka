@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Chanka</title>
+    <title>Eco Chanka - consultoría y asesoría ambiental</title>
 </head>
 
 <body>
@@ -14,19 +14,27 @@
     <header id="main-header">
         <div id="logo-wrapper">
             <img src="images/logotipo.png" alt="logo" class="logo">
+            <h1>ECO CHANKA</h1>
         </div>
 
+        <!-- begin hamburger -->
+        <input type="checkbox" id="toggler">
+        <div id="hamburger">
+            <div class="line"></div>
+        </div>
+        <!-- end hamburger -->
+
         <nav id="menu-bar">
-            <a href="#">INICIO</a>
-            <a href="#">SERVICIOS</a>
+            <a href="#services">SERVICIOS</a>
             <a href="#">NOSOTROS</a>
-            <a href="#">CONTÁCTENOS</a>
-            <a href="#">FAQ</a>
+            <a href="#">CONTÁCTENOS</a>            
+            <!-- mobile login -->
+            <a href="#">LOG IN</a>
+            <!-- mobile login -->
         </nav>
 
         <div id="login">
-            <img src="/images/login.svg" alt="login icon">
-            <span>Login</span>
+            <button>&#128273;</button>
         </div>
     </header>
 
@@ -52,7 +60,7 @@
             <button type="button">CONÓCENOS</button>
         </section>
 
-        <section class="container services-section">
+        <section class="container services-section" id="services">
             <h3>SERVICIOS</h3>
             <div id="services-container">
                 <div class="service-wrapper">
