@@ -362,5 +362,10 @@ h1, #toggler, #menu-bar a:last-child{
         transform: translateY(0);
     }
 
-    
+    /* Slider fit the empty space*/
+    #slider {
+        margin-top: 12.5vh;
+        height: 87.5vh;
+    }
+
 }
