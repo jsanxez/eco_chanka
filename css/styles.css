@@ -361,20 +361,6 @@ h1, #toggler, #menu-bar a:last-child{
         opacity: 1;
         transform: translateY(0);
     }
-    #toggler:checked + #hamburger {
-    }
 
-    /*
-    #menu-bar a {
-        font-size: 12px;
-    }*/
-
-    /* ----> headline <---- */
-    /* #headline h2 {
-        font-size: 1.5em;
-    }
-    #headline h3 {
-        font-size: 1.1em;
-    } */
-
+    
 }
