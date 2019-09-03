@@ -136,7 +136,7 @@ h1, #toggler, #menu-bar a:last-child{
 
 }
 #headline button {
-    margin-top: 72px;
+    margin-top: 10vh;
 }
 
 /* ----> main content <---- */
@@ -206,7 +206,6 @@ h1, #toggler, #menu-bar a:last-child{
     /* border: 1px solid; */
 }
 .service-wrapper:hover .image-wrapper{
-    /* box-shadow: 0px 2px 6px #d1d3d1; */
     background: #065f03;
 }
 
@@ -241,7 +240,6 @@ h1, #toggler, #menu-bar a:last-child{
     padding: 0 var(--hborder-space);
 }
 .clients-container img {
-    /* border: 1px solid; */
     height: 100px;
     margin-top: 16px;
 }
@@ -250,33 +248,49 @@ h1, #toggler, #menu-bar a:last-child{
 #main-footer {
     align-items: center;
     background-color: var(--background-dark);
-    color: white;
+    color: rgba(255, 255, 255, .8);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     min-height: 150px;
-    padding: 36px 36px;
+    padding: var(--vborder-space) var(--hborder-space);
+}
+/* footer brand */
+#main-footer::before {
+    content: "ECO CHANKA";
+    display: block;
+    flex: 1;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 #main-footer .logo {
-    width: 100px;
+    display: none
 }
+
 #main-footer #contact {
-    display: inline-block;
-    margin-left: 36px;
+    flex: 2;
+    text-align: center;
 }
 #main-footer #social-wrapper {
+    flex: 1;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
     min-height: 100px;
 }
 #social-wrapper img {
-    width: 30px;
+    width: 25px;
+    margin-left: 10px;
 }
 
-    /* ----> media queries <---- */
 
-@media screen and (max-width: 360px) {
+
+
+/* --------> media queries <-------- */
+
+@media screen and (max-width: 500px) {
     
     /* show them */
     h1, #toggler, #menu-bar a:last-child {
@@ -368,4 +382,90 @@ h1, #toggler, #menu-bar a:last-child{
         height: 87.5vh;
     }
 
+    /* headline */
+    #headline h2 {
+        font-size: 1.5em;
+    }
+    #headline h3 {
+        font-size: 1.2em;
+    }
+
+    /* main */
+    .container {
+        min-height: 87.5vh;
+    }
+    .container h3 {
+        font-size: 1.1em;
+        font-weight: 700;
+    
+    }
+    .container h4 {
+        font-size: 1em;
+        font-weight: 500;
+        margin-top: 32px;
+    
+    }
+
+    /* about section */
+    .about-section h4 {
+        font-weight: 300;
+    }
+    .about-section img {
+        width: 100px;
+    }
+
+    /* ----> services section <---- */    
+    .service-wrapper img {
+        width: 50px;
+    }
+    
+    /*----> clients <----*/
+    .clients-section {
+        min-height: min-content;
+    }
+
+    /* footer */
+    #main-footer {
+        flex-flow: column wrap;
+        min-height: 150px;
+        padding: 36px 36px;
+    }
+    #main-footer::before {
+        content: "";
+    }
+    #main-footer .logo {
+        display: initial;
+        width: 50px;
+        margin-bottom: 20px;
+    }
+
+    #main-footer #contact {
+        font-size: .8em;
+        width: 90%;
+    }
+    #main-footer #social-wrapper {
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    #social-wrapper img {
+        margin: 0;
+    }
+}
+
+
+/* --------> extra queries <-------- */
+
+@media screen and (max-width: 200px) {
+    
+    /* headline */
+    #headline h2 {
+        font-size: 1em;
+    }
+    #headline h3 {
+        font-size: .7em;
+    }
+
+    #main-footer #contact {
+        font-size: .5em;
+    }
 }
