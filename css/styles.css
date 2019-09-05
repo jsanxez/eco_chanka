@@ -129,9 +129,6 @@ h1, #toggler, #menu-bar a:last-child{
 #headline h2 {
     font-size: 2.2em;
     font-weight: 500;
-    /* overflow: hidden; */
-    /* word-break: break-all; */
-    /* text-overflow: ellipsis; */
 }
 #headline h3 {
     font-size: 25px;
