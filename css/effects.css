@@ -16,11 +16,28 @@
 }
 
 /* common buttons */
-button:hover {
+.btn {
+    overflow: hidden;
+}
+.btn::before {
+    content: "";
+    position: absolute;
     background-color: var(--btn-hover);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-radius: 50px;
+    transition: width .4s ease-in-out;
+}
+.btn:hover::before {
+    width: 100%;
 }
 
 /* service wrappers */
+.service-wrapper > .image-wrapper {
+    overflow: hidden;
+}
 .service-wrapper > .image-wrapper::before {
     content: "";
     position: absolute;

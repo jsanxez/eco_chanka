@@ -4,8 +4,8 @@
     --background-light:#3488a9;
     --background-dark: #256179;
     --dark40: rgba(0, 0, 0, .5);
-    --background-btn: #21a21d;
-    --btn-hover: #3aac36;
+    --background-btn: rgb(33, 162, 29);
+    --btn-hover: rgba(0, 0, 0, .1);
     --vborder-space: 72px;
     --hborder-space: 5%;
 }
@@ -25,6 +25,7 @@ body, button{
 }
 
 button {
+    position: relative;
     background-color: var(--background-btn);
     border-radius: 50px;
     color: var(--primary-light);
