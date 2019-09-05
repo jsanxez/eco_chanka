@@ -53,3 +53,9 @@
 .image-wrapper:hover::before{
     height: 100%;
 }
+
+/* social-wrapper icons */
+#social-wrapper img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}

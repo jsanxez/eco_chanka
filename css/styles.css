@@ -281,8 +281,10 @@ h1, #toggler, #menu-bar a:last-child{
     min-height: 100px;
 }
 #social-wrapper img {
-    width: 25px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     margin-left: 10px;
+    width: 25px;
 }
 
 
