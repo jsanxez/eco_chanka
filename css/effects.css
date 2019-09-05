@@ -6,11 +6,33 @@
 
 /* login button */
 #login button::after {
-    white-space: nowrap;
     content: "Log in";
     font-size: 12px;
     font-weight: 400;
+    white-space: nowrap;
 }
 #login button:hover{
        width: 90px;
+}
+
+/* common buttons */
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+/* service wrappers */
+.service-wrapper > .image-wrapper::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    transition: height .4s ease;
+}
+
+.image-wrapper:hover::before{
+    height: 100%;
 }

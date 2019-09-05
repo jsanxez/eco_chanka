@@ -4,7 +4,8 @@
     --background-light:#3488a9;
     --background-dark: #256179;
     --dark40: rgba(0, 0, 0, .5);
-    --background-btn: #099804;
+    --background-btn: #21a21d;
+    --btn-hover: #3aac36;
     --vborder-space: 72px;
     --hborder-space: 5%;
 }
@@ -204,16 +205,13 @@ h1, #toggler, #menu-bar a:last-child{
     margin: 20px;
     padding: 1em 2em;
     max-width: 300px;
-    /* border: 1px solid; */
-}
-.service-wrapper:hover .image-wrapper{
-    background: #065f03;
 }
 
 .service-wrapper .image-wrapper {
     background-color: #c4c4c4;
     border-radius: 50%;
-    padding: 16px
+    padding: 16px;
+    position: relative;
 }
 
 .service-wrapper img {
