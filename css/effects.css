@@ -1,4 +1,7 @@
 /* nav links */
+#menu-bar a {
+    transition: all .5s ease;
+}
 #menu-bar a:hover {
     text-shadow: 0 3px 3px rgba(105, 67,  35, .5);
     transform: translateY(-2px);
