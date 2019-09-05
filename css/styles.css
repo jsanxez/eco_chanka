@@ -53,18 +53,17 @@ h1, #toggler, #menu-bar a:last-child{
     margin: auto;
     padding: 10px var(--hborder-space);
     min-height: 12.5vh;
-    /* position: sticky; */
     top: 0px;
 
 }
 
 #main-header #logo-wrapper{
     flex: 1;
+    cursor: pointer;
     display: flex;
 }
 #logo-wrapper img {
     width: 70px;
-    cursor: pointer;
 }
 
 #menu-bar {
@@ -78,7 +77,7 @@ h1, #toggler, #menu-bar a:last-child{
     font-size: 14px;
     font-weight: 500;
     padding: 5px 10px;
-    transition-duration: 1s;
+    transition-duration: .3s;
 }
 
 
@@ -91,18 +90,20 @@ h1, #toggler, #menu-bar a:last-child{
 
 #login button {
     background-color: var(--background-light);
+    border-radius: 25px;
     color: var(--primary-light);
-    border-radius: 50%;
-    padding: 5px 5px;
-    min-width: 30px;
-    height: 30px;
-
-    /* border-radius: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px 5px;
+    min-width: 35px;
+    height: 35px;
     font-size: 16px;
-    /* font-weight: 500; */
-    /* padding: 7px 10px; */
-    /* min-width: 130px; */
+    width: 35px;
+    overflow: hidden;
+    transition: width .5s ease;
 }
+
 
 /*----> slider <----*/
 #slider {
@@ -260,7 +261,7 @@ h1, #toggler, #menu-bar a:last-child{
     content: "ECO CHANKA";
     display: block;
     flex: 1;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 700;
 }
 #main-footer .logo {
@@ -325,6 +326,7 @@ h1, #toggler, #menu-bar a:last-child{
         right: 5%;
         width: 25px;
         height: 25px;
+        cursor: pointer;
     }
     #toggler {
         opacity: 0;

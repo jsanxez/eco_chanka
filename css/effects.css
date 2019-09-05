@@ -1,0 +1,16 @@
+/* nav links */
+#menu-bar a:hover {
+    text-shadow: 0 3px 3px rgba(105, 67,  35, .5);
+    transform: translateY(-2px);
+}
+
+/* login button */
+#login button::after {
+    white-space: nowrap;
+    content: "Log in";
+    font-size: 12px;
+    font-weight: 400;
+}
+#login button:hover{
+       width: 90px;
+}
