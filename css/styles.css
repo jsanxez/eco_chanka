@@ -159,6 +159,7 @@ h1, #toggler, #menu-bar a:last-child{
 
 .about-section {
     background: webkit-radial-gradient(var(--background-light), var(--background-dark));
+    background: radial-gradient(var(--background-light), var(--background-dark));
     color: var(--primary-light);
     display: flex;
     flex-flow: column wrap;
