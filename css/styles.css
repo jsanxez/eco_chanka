@@ -66,6 +66,7 @@ h1, #toggler, #menu-bar a:last-child{
 }
 #logo-wrapper img {
     width: 70px;
+    height: 70px;
 }
 
 #menu-bar {
