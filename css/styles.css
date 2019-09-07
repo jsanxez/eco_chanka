@@ -422,11 +422,13 @@ h1, #toggler, #menu-bar a:last-child{
     }
     .about-section img {
         width: 100px;
+        height: 100px;
     }
 
     /* ----> services section <---- */    
     .service-wrapper img {
         width: 50px;
+        height: 50px;
     }
     
     /*----> clients <----*/

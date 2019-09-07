@@ -18,10 +18,19 @@
        width: 90px;
 }
 
+/* headline */
+#headline h2, #headline h3 {
+    animation: opacity 4s ease;
+}
+
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 /* headline button */
 #headline button {
     animation-delay: 1s;
-    animation: drop 1.5s ease;
+    animation: drop 2s ease;
 }
 
 @keyframes drop {
