@@ -19,6 +19,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body, button{
     font-family: 'Poppins', sans-serif;
     color: var(--primary-light);
@@ -110,6 +113,7 @@ h1, #toggler, #menu-bar a:last-child{
 /*----> slider <----*/
 #slider {
     background-image: url(../images/tala.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 87.5vh;
