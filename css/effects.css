@@ -20,7 +20,7 @@
 
 /* headline */
 #headline h2, #headline h3 {
-    animation: opacity 4s ease;
+    animation: opacity 5s ease;
 }
 
 @keyframes opacity {
