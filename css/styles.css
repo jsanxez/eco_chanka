@@ -34,7 +34,7 @@ button {
     color: var(--primary-light);
     font-size: 14px;
     font-weight: 500;
-    padding: 7px 10px;
+    padding: 10px 10px;
     min-width: 130px;
     cursor: pointer;
 }
@@ -80,8 +80,7 @@ h1, #toggler, #menu-bar a:last-child{
 }
 #menu-bar a {
     /* color: var(--primary-dark); */
-    /* color: var(--background-btn); */
-    color: black;
+    color: var(--background-btn);
     font-size: 14px;
     font-weight: 500;
     padding: 5px 10px;

@@ -5,7 +5,7 @@
 
 #menu-bar a::before, #menu-bar a::after {
     display: inline-block;
-    transition: all .5s ease;
+    transition: all .3s ease;
     opacity: 0;
 }
 
