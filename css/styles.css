@@ -52,7 +52,7 @@ h1, #toggler, #menu-bar a:last-child{
     position: fixed;
     width: 100%;
     background-color: #dbf3fc;
-    box-shadow: 0px 2px 5px #494949;
+    box-shadow: 0px 2px 7px #7f7f7f;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -377,6 +377,7 @@ h1, #toggler, #menu-bar a:last-child{
     /* ----> nav links <---- */
      #menu-bar {
          background-color: #dbf3fc;
+         box-shadow: 0px 2px 7px 1px #7f7f7f;
          position: fixed;
          top: 0;
          bottom: 70vh;

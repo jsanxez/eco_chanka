@@ -7,7 +7,7 @@ window.onscroll = function () {
         this.document.getElementById("main-header").style.top = "0";
 
     } else
-        this.document.getElementById("main-header").style.top= "-100px";
+        this.document.getElementById("main-header").style.top= "-120px";
 
     this.prevScrollPos = currentScrollPos;
 }
