@@ -28,7 +28,7 @@ body, button{
 }
 
 button {
-    position: relative;
+    position: relative; /*shadow effect*/
     background-color: var(--background-btn);
     border-radius: 50px;
     color: var(--primary-light);
@@ -49,6 +49,8 @@ h1, #toggler, #menu-bar a:last-child{
 
 /* ----> main header <---- */
 #main-header {    
+    position: fixed;
+    width: 100%;
     background-color: #dbf3fc;
     box-shadow: 0px 2px 5px #494949;
     display: flex;
@@ -59,7 +61,9 @@ h1, #toggler, #menu-bar a:last-child{
     padding: 10px var(--hborder-space);
     min-height: 12.5vh;
     top: 0px;
-
+    z-index: 1;
+    /*scroll effect*/
+    transition: top .5s;
 }
 
 #main-header #logo-wrapper{
@@ -117,7 +121,8 @@ h1, #toggler, #menu-bar a:last-child{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: 87.5vh;
+    /* height: 87.5vh; */
+    height: 100vh;
 }
 #slider #headline {
     background-color: var(--dark40);
@@ -129,6 +134,8 @@ h1, #toggler, #menu-bar a:last-child{
     height: 100%;
     text-align: center;
     padding: var(--vborder-space) 0;
+    /* cetering the headline */
+    padding-top: 25vh;
 }
 
 #headline h2 {
@@ -315,12 +322,12 @@ h1, #toggler, #menu-bar a:last-child{
     /* hidden */
 
 
-    #main-header {
+    /* #main-header {
         position: fixed;
         top: -1px;
         width: 100%;
         z-index: 1;
-    }
+    } */
 
     #main-header #logo-wrapper h1 {
         color: var(--primary-dark);
@@ -330,7 +337,7 @@ h1, #toggler, #menu-bar a:last-child{
 
     /* hamburger */
     #toggler, #hamburger {
-        position: fixed;
+        position: absolute;
         margin: auto 0;
         right: 5%;
         width: 25px;
@@ -389,8 +396,8 @@ h1, #toggler, #menu-bar a:last-child{
 
     /* Slider fit the empty space*/
     #slider {
-        margin-top: 12.5vh;
-        height: 87.5vh;
+        /* margin-top: 12.5vh; */
+        /* height: 87.5vh; */
     }
 
     /* headline */
