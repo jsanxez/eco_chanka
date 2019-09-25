@@ -14,11 +14,11 @@
 
 #menu-bar a:hover::before{
     opacity: 1;
-    transform: translateX(-7px);
+    transform: translateX(-10px);
 }
 #menu-bar a:hover::after{
     opacity: 1;
-    transform: translateX(7px);
+    transform: translateX(5px);
 }
 
 /* login button */
