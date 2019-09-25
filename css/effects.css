@@ -1,10 +1,6 @@
-/* nav links */
-#menu-bar a {
-    /* transition: all .5s ease; */
-}
-
 #menu-bar a::before, #menu-bar a::after {
     display: inline-block;
+    position: absolute;
     transition: all .3s ease;
     opacity: 0;
 }
