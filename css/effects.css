@@ -33,24 +33,20 @@
 }
 
 /* headline */
-#headline h2, #headline h3 {
-    animation: opacity 5s ease;
+.headline h2, .headline h3 {
+    animation: drop 2s ease;
 }
 
-@keyframes opacity {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
 /* headline button */
-#headline button {
+.headline button {
     animation-delay: 1s;
-    animation: drop 2s ease;
+    animation: drop 3s ease;
 }
 
 @keyframes drop {
     0% {
         opacity: 0;
-        transform: translateY(-60vh);
+        transform: translateY(-10vh);
     }
     100% {
         opacity: 1;

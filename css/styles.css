@@ -51,7 +51,8 @@ h1, #toggler, #menu-bar a:last-child{
 #main-header {    
     position: fixed;
     width: 100%;
-    background-color: #dbf3fc;
+    background-color: rgba(255, 255, 255, 1);
+    /* background-color: var(--background-dark); */
     box-shadow: 0px 2px 7px #7f7f7f;
     display: flex;
     align-items: center;
@@ -84,12 +85,21 @@ h1, #toggler, #menu-bar a:last-child{
 }
 #menu-bar a {
     /* color: var(--primary-dark); */
-    color: var(--background-btn);
+    /* color: var(--background-btn); */
+    color: var(--background-dark);
     font-size: 16px;
     font-weight: 500;
     padding: 5px 10px;
 }
-
+/* active link */
+#menu-bar .active-link::before{
+    opacity: 1;
+    transform: translateX(-10px);
+}
+#menu-bar .active-link::after{
+    opacity: 1;
+    transform: translateX(5px);
+}
 
 #login {
     display: flex;
@@ -116,15 +126,22 @@ h1, #toggler, #menu-bar a:last-child{
 
 
 /*----> slider <----*/
-#slider {
+.home-slider {
     background-image: url(../images/environmental.jpg);
+}
+.about-slider {
+    background-image: url(../images/about.jpg)
+
+}
+.slider {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     /* height: 87.5vh; */
     height: 100vh;
 }
-#slider #headline {
+
+.slider .headline{
     background-color: var(--dark40);
     color: var(--primary-light);
     display: flex;
@@ -137,17 +154,35 @@ h1, #toggler, #menu-bar a:last-child{
     /* cetering the headline */
     padding-top: 25vh;
 }
+/* about slider */
+.slider .about-headline {
+    align-items: flex-start;
+    text-align: left;
+    padding: var(--vborder-space) var(--hborder-space);
+    padding-top: 25vh;
+}
 
-#headline h2 {
+.headline h2 {
     font-size: 2.2em;
     font-weight: 500;
 }
-#headline h3 {
+.headline h3 {
     font-size: 25px;
     font-weight: 300;
 
 }
-#headline button {
+.about-headline h2 {
+    width: 40%;
+    font-weight: 700;
+    font-size: 2.1em;
+}
+.about-headline h3 {
+    width: 40%;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.headline button {
     margin-top: 10vh;
 }
 
@@ -166,7 +201,6 @@ h1, #toggler, #menu-bar a:last-child{
     font-size: 24px;
     font-weight: 100;
     margin-top: 32px;
-
 }
 
 .about-section {
@@ -196,27 +230,54 @@ h1, #toggler, #menu-bar a:last-child{
     margin-top: var(--vborder-space);
 }
 
+/* about link */
+.about-us {
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 72px var(--hborder-space);
+    min-height: 50vh;
+}
+.about-us .box {
+    max-width: 350px;
+    text-align: left;
+    margin: 0px 20px;
+    /* text-justify: auto; */
+    /* border: 1px solid red; */
+    /* background-color: var(--background-btn); */
+}
+.about-us .box h4 {
+    border-bottom: 3px solid var(--background-btn);
+    font-weight: 500;
+}
+.about-us .box h5 {
+    font-size: 1em;
+    font-weight: 300;
+    padding: var(--hborder-space) 0;
+}
+
 /*----> services <----*/
 .services-section {
     background-color: var(--primary-light);
     color: var(--primary-dark);
 }
-
-.services-section #services-container {
+.services-section .services-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     padding: 0 var(--hborder-space);
 }
-
 .services-section .service-wrapper {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: flex-start;
     margin: 20px;
-    padding: 1em 2em;
+    padding: 0em 2em;
     max-width: 300px;
+    /* border: 1px dotted; */
 }
 
 .service-wrapper .image-wrapper {
@@ -225,18 +286,38 @@ h1, #toggler, #menu-bar a:last-child{
     padding: 16px;
     position: relative;
 }
-
 .service-wrapper img {
     display: block;
     margin: auto;
     width: 80px;
     height: 80px;
 }
-
 .service-wrapper h4 {
     font-weight: 400;
 }
 
+/* about link */
+.service-wrapper .portrait-wrapper {
+    background-color: var(--background-light);
+    border-radius: 50%;
+    padding: 6px;
+    position: relative;
+}
+.portrait-wrapper img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+.portrait-wrapper + h4 {
+    border-bottom: 1px solid var(--background-light);
+}
+.portrait-wrapper + h4 + span {
+    color: gray;
+    font-size: .9em;
+    margin-top: 1em;
+}
 
 /*----> clients <----*/
 .clients-section {

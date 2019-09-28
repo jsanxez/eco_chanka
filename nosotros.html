@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 <meta charset="UTF-8">
@@ -12,26 +12,6 @@
 <title>Eco Chanka - consultoría y asesoría ambiental</title>
 <script src="js/header.js" type="text/javascript"></script>
 </head>
-
-<style>
-    #slider {
-    background-image: url(../images/ingenieros.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-    /* height: 87.5vh; */
-    height: 100vh;
-    }
-
-    #menu-bar a:nth-child(2)::before{
-        opacity: 1;
-        transform: translateX(-10px);
-    }
-    #menu-bar a:nth-child(2)::after{
-        opacity: 1;
-        transform: translateX(5px);
-    }
-</style>
 
 <body>
 
@@ -49,9 +29,10 @@
     <!-- end hamburger -->
 
     <nav id="menu-bar">
-        <a href="#services">SERVICIOS</a>
-        <a href="nosotros.html">NOSOTROS</a>
+        <a href="nosotros.html" class="active-link">NOSOTROS</a>
+        <a href="index.html#services">SERVICIOS</a>
         <a href="contactenos.html">CONTÁCTENOS</a>            
+        <a href="#">FAQ</a>            
         <!-- mobile login -->
         <a href="#">LOG IN</a>
         <!-- mobile login -->
@@ -62,71 +43,64 @@
     </div>
 </header>
 
-<div id="slider">
-    <div id="headline">
-        <h2>ACERCA DE NOSOTROS</h2>
-        <h3>Ingenieros especialistas en monitoreo ambiental.</h3>
-        <button type="button" class="btn">CONTÁCTENOS</button>
+<div class="slider about-slider">
+    <div class="headline about-headline">
+        <!-- <div class="wrapper1"> -->
+            <h2>En Eco Chanka prosperamos en los desafíos.</h2>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, autem.
+            </h3>
+            <!-- <button type="button" class="btn">CONTÁCTENOS</button> -->
+        <!-- </div> -->
+        <!-- <div class="wrapper2"> -->
+        <!-- </div> -->
     </div>
 </div>
 
 
 <main>
-    <section class="container about-section">
-        <img src="images/about_us.svg" alt="about us image">
-        <h3>SOMOS ECO CHANKA</h3>
-        <h4>Una empresa peruana dedicada a desarrollar soluciones estratégicas ambientalmente viables que conlleven
-            a la conservación y cuidado del medio ambiente.</h4>
-        <button type="button" class="btn">CONÓCENOS</button>
+    <section class="container about-us">
+        <div class="box">
+            <h4>NUESTRA MISIÓN</h4>
+            <h5>Brindar servicios de consultoría ambiental integral y estudios de ingeniería, tanto en el sector público como privado con el fin de proveer soluciones innovadoras y ambientalmente viables, para los proyectos que se desarrollan en los diversos sectores del país.</h5>
+        </div>
+        <div class="box">
+            <h4>NUESTRA VISIÓN</h4>
+            <h5>Eco Chanka busca para el año 2025 ser una empresa líder en el mercado de consultorías ambientales a nivel nacional, e iniciar avances a nivel internacional siempre teniendo como fundamento un desarrollo sostenible, en base a nuestro capital humano y experiencias.</h5>
+        </div>
+        <div class="box">
+            <h4>POLÍTICAS DE CALIDAD</h4>
+            <h5>Comprometidos a prestar el mejor servicio, cumpliendo con los requerimientos legales acogidos por la empresa, realizando seguimiento a los servicios prestados para garantizar los acuerdos estipulados.</h5>
+        </div>
     </section>
 
-    <section class="container services-section" id="services">
-        <h3>SERVICIOS</h3>
-        <div id="services-container">
+    <section class="container services-section">
+        <h3>NUESTRO EQUIPO</h3> 
+        <div class="services-container">
             <div class="service-wrapper">
-                <div class="image-wrapper">
-                    <img src="images/trash.svg" alt="">
+                <div class="portrait-wrapper">
+                    <img src="images/John-Doe.jpg" alt="">
                 </div>
-                <h4>Planes de manejo ambiental</h4>
-                <!-- <p>architecto vitae! doloremque veniam maiores voluptatibus laboriosam molestias?</p> -->
+                <h4>John Valenzuela Mondalgo</h4>
+                <span>Ingeniero ambiental</span>
+                <p>Especialista en gestión ambiental.</p>
             </div>
             <div class="service-wrapper">
-                <div class="image-wrapper">
-                    <img src="images/green_engineering.svg" alt="">
+                <div class="portrait-wrapper">
+                    <img src="images/jane-doe.jpg" alt="">
                 </div>
-                <h4>Gestión de residuos urbanos e industriales</h4>
-                <!-- <p>fugit possimus fuga commodi esse excepturi placeat rerum minima, quisquam quasi quod.</p> -->
+                <h4>Jane Mondalgo Contreras</h4>
+                <span>Ingeniero ambiental</span>
+                <p>Consultor y especialista en gestión de residuos.</p>
             </div>
             <div class="service-wrapper">
-                <div class="image-wrapper">
-                    <img src="images/van.svg" alt="">
+                <div class="portrait-wrapper">
+                    <img src="images/jane-doe.jpg" alt="">
                 </div>
-                <h4>Documentos de gestión ambiental municipal</h4>
-                <!-- <p>Quibusdam eveniet molestias, maiores, id eaque voluptatibus modi!</p> -->
-            </div>
-            <div class="service-wrapper">
-                <div class="image-wrapper">
-                    <img src="images/van.svg" alt="">
-                </div>
-                <h4>Planes de manejo ambiental</h4>
-                <!-- <p>vero, amet quo laudantium commodimaxime repudiandae laboriosam! Atque.</p> -->
-            </div>
-            <div class="service-wrapper">
-                <div class="image-wrapper">
-                    <img src="images/trash.svg" alt="">
-                </div>
-                <h4>Planes de manejo ambiental</h4>
-                <!-- <p>quasi quibusdam soluta architecto, doloribus veritatis vero id.</p> -->
-            </div>
-            <div class="service-wrapper">
-                <div class="image-wrapper">
-                    <img src="images/green_engineering.svg" alt="">
-                </div>
-                <h4>Planes de manejo ambiental</h4>
-                <!-- <p>autem eos unde modi. Velit, illum atque dolor. Nostrum, dolorum autem! Aspernatur, facere.</p> -->
+                <h4>Jane Contreras Ortiz</h4>
+                <span>Bióloga</span>
+                <p>Especialista en flora y fauna marina.</p>
             </div>
         </div>
-        <button type="button" class="btn">VER MÁS</button>
     </section>
 
     <section class="container clients-section">
