@@ -250,12 +250,47 @@ h1, #toggler, #menu-bar a:last-child{
 }
 .about-us .box h4 {
     border-bottom: 3px solid var(--background-btn);
+}
+.box h4 {
     font-weight: 500;
 }
-.about-us .box h5 {
+.box h5 {
     font-size: 1em;
     font-weight: 300;
     padding: var(--hborder-space) 0;
+}
+/* about link */
+/* business values */
+.business-values-section {
+    background-color: var(--background-light);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    padding: 72px var(--hborder-space);
+}
+.business-values-section h3 {
+    margin-bottom: 1.5em;
+}
+.business-values-section .box {
+    /* background-color: var(--btn-hover); */
+    background-color: rgba(33, 162, 29, .6);
+    border: 2px solid var(--background-dark);
+    padding: 18px;
+    max-width: 300px;
+}
+.business-values-section .box h4, .business-values-section .box h5 {
+    margin: 5px 0;
+    padding: 0px;
+    text-align: left;
+}
+.business-values-section .left {
+    border-radius: 10px 0 0 10px;
+    margin-right: 300px;
+}
+.business-values-section .right {
+    border-radius: 0 10px 10px 0;
+    margin-left: 300px;
 }
 
 /*----> services <----*/
@@ -311,7 +346,7 @@ h1, #toggler, #menu-bar a:last-child{
     height: 150px;
 }
 .portrait-wrapper + h4 {
-    border-bottom: 1px solid var(--background-light);
+    border-bottom: 2px solid var(--background-light);
 }
 .portrait-wrapper + h4 + span {
     color: gray;
