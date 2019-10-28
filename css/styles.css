@@ -414,6 +414,6 @@ h1, #toggler, #menu-bar a:last-child{
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
     margin-left: 10px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
