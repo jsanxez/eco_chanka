@@ -333,7 +333,7 @@ h1, #toggler, #menu-bar a:last-child{
 
 /* about link */
 .service-wrapper .portrait-wrapper {
-    background-color: var(--background-light);
+    background-color: var(--background-btn);
     border-radius: 50%;
     padding: 6px;
     position: relative;
@@ -346,7 +346,7 @@ h1, #toggler, #menu-bar a:last-child{
     height: 150px;
 }
 .portrait-wrapper + h4 {
-    border-bottom: 2px solid var(--background-light);
+    border-bottom: 2px solid var(--background-btn);
 }
 .portrait-wrapper + h4 + span {
     color: gray;
