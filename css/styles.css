@@ -264,38 +264,26 @@ h1, #toggler, #menu-bar a:last-child{
 /* business values */
 .business-values-section {
     background-color: var(--background-light);
-    align-items: center;
-    position: relative;
     padding: 72px var(--hborder-space);
     min-height: 50vh;
+}
+.business-values-section h3 {
+    margin-bottom: .7em;
 }
 .business-values-section .values-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* border-top: 2px solid var(--background-dark); */
-    /* border-bottom: 2px solid var(--background-dark); */
 }
-.business-values-section h3 {
-    margin-bottom: 1.5em;
-}
-.business-values-section .box {
+.values-container .box {
     padding: 18px;
     max-width: 350px;
     margin: 0 20px;
 }
-.business-values-section .box h4, .business-values-section .box h5 {
+.values-container .box h4, .values-container .box h5 {
     margin: 5px 0;
     padding: 0px;
-    text-align: left;
-}
-.business-values-section .left {
-    border-radius: 10px 0 0 10px;
-    margin-right: 300px;
-}
-.business-values-section .right {
-    border-radius: 0 10px 10px 0;
-    margin-left: 300px;
+    text-align: center;
 }
 
 /*----> services <----*/

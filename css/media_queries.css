@@ -84,10 +84,10 @@
         /* remove it if you want */
 
     /* headline */
-    #headline h2 {
+    .headline h2 {
         font-size: 1.5em;
     }
-    #headline h3 {
+    .headline h3 {
         font-size: 1.2em;
     }
 
